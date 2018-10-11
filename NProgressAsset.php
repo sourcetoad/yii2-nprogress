@@ -99,7 +99,7 @@ jQuery(document).on('ajaxStart',    function() { NProgress.start(); });
 jQuery(document).on('ajaxComplete', function() { NProgress.done();  });                    
 AJAX;
             $view->registerJs($jsAjax, View::POS_END);
-            $this->depends[] = 'yii\widgets\JqueryAsset';
+            $this->depends[] = 'yii\web\JqueryAsset';
         }
 
         parent::registerAssetFiles($view);
